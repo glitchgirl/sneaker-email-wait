@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+    form(action='/add_movie', method='POST')
+      p
+        | title: 
+        input(name='title', value='', type='text')
+        |          year: 
+        input(name='year', value='', type='text')
+        |          imdb: 
+        input(name='imdb', value='', type='text')
+      input(value='Submit', type='submit')
+      p #{count}
