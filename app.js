@@ -27,7 +27,7 @@ var connection = mysql.createConnection({
     host     : 'localhost',
     user     : 'root',
     database : 'movie_info',
-    password : 'morganchase'
+    password : ''
   });
 
   app.get("/", function(req, res){
